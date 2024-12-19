@@ -76,6 +76,52 @@
 
 ### 3.3数据样例
 
+```
+    {
+        "audio_id": "BAC009S0193W0470",
+        "data_annotation": [
+            {
+                "id": "gYMUZTZAtK",
+                "type": "entity",
+                "value": {
+                    "end": 13,
+                    "text": "十万元",
+                    "start": 10,
+                    "labels": "<金钱>"
+                }
+            },
+            {
+                "id": "HXZOywXVdJ",
+                "type": "entity",
+                "value": {
+                    "end": 5,
+                    "text": "农行",
+                    "start": 3,
+                    "labels": "<组织>"
+                }
+            },
+            {
+                "id": "3oXL2KZCmv",
+                "type": "entity",
+                "value": {
+                    "end": 8,
+                    "text": "农行储蓄卡",
+                    "start": 3,
+                    "labels": "<产品>"
+                }
+            },
+            {
+                "type": "relation",
+                "to_id": "3oXL2KZCmv",
+                "labels": [
+                    "组织:研发/生产/销售:产品"
+                ],
+                "from_id": "HXZOywXVdJ",
+                "direction": "right"
+            }
+        ],
+    }
+```
 
 
 ## 4.评价标准
