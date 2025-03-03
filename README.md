@@ -79,52 +79,39 @@
 ### 3.3数据样例
 
 ```
-    {
-        "audio_id": "BAC009S0193W0470",
-        "data_annotation": [
-            {
-                "id": "gYMUZTZAtK",
-                "type": "entity",
-                "value": {
-                    "end": 13,
-                    "text": "十万元",
-                    "start": 10,
-                    "labels": "<金钱>"
-                }
-            },
-            {
-                "id": "HXZOywXVdJ",
-                "type": "entity",
-                "value": {
-                    "end": 5,
-                    "text": "农行",
-                    "start": 3,
-                    "labels": "<组织>"
-                }
-            },
-            {
-                "id": "3oXL2KZCmv",
-                "type": "entity",
-                "value": {
-                    "end": 8,
-                    "text": "农行储蓄卡",
-                    "start": 3,
-                    "labels": "<产品>"
-                }
-            },
-            {
-                "type": "relation",
-                "to_id": "3oXL2KZCmv",
-                "labels": [
-                    "组织:研发/生产/销售:产品"
-                ],
-                "from_id": "HXZOywXVdJ",
-                "direction": "right"
-            }
+{
+    "audio_id": "sample",
+    "data_annotation": [
+        [
+            [
+                "沙玛什",
+                "持有称号/职业",
+                "正义之神"
+            ]
         ],
-    }
+        [
+            [
+                "沙玛什",
+                "隶属于",
+                "苏美尔乌图神"
+            ],
+            [
+                "沙玛什",
+                "隶属于NORP组织",
+                "苏美尔乌图神"
+            ]
+        ],
+        [
+            [
+                "苏美尔乌图神",
+                "设立职位/称号/奖项",
+                "正义之神"
+            ]
+        ]
+    ]
+}
 ```
-[此处获取音频BAC009S0193W0470](https://github.com/DMU-ITREC/CSRTE-CCL2025/blob/main/BAC009S0193W0470.wav)
+[此处获取音频BAC009S0193W0470](https://github.com/DMU-ITREC/CSRTE-CCL2025/blob/main/example.wav)
 
 
 
